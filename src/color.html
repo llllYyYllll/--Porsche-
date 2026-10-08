@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保时捷色卡</title>
+    <!-- 引入你的外部css文件 -->
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 40px;
+            background-color: #f4f4f4;
+            font-family: sans-serif;
+        }
+        .color-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 24px;
+        }
+        .color-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: transform 0.2s ease;
+        }
+        .color-card:hover {
+            transform: translateY(-6px);
+        }
+        .color-block {
+            height: 120px;
+        }
+        .color-text {
+            padding:12px;
+            background: white;
+        }
+        .var-name {
+            font-weight:bold;
+            font-size:14px;
+        }
+        .hex-code {
+            font-size:13px;
+            color:#666;
+            margin-top:4px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="margin-bottom:30px">保时捷配色色卡</h2>
+    <div class="color-container">
+        <div class="color-card">
+            <div class="color-block" style="background: var(--porsche-red);"></div>
+            <div class="color-text">
+                <div class="var-name">--porsche-red</div>
+                <div class="hex-code">#9E0B21</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--porsche-black);"></div>
+            <div class="color-text">
+                <div class="var-name">--porsche-black</div>
+                <div class="hex-code">#000000</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--porsche-yellow);"></div>
+            <div class="color-text">
+                <div class="var-name">--porsche-yellow</div>
+                <div class="hex-code">#D4AF37</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--black-ground);"></div>
+            <div class="color-text">
+                <div class="var-name">--black-ground</div>
+                <div class="hex-code">#a3a19f</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--black-ground-light);"></div>
+            <div class="color-text">
+                <div class="var-name">--black-ground-light</div>
+                <div class="hex-code">#e0dfdd</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--black-ground-dark);"></div>
+            <div class="color-text">
+                <div class="var-name">--black-ground-dark</div>
+                <div class="hex-code">#5c5b59</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--black-ground-darker);"></div>
+            <div class="color-text">
+                <div class="var-name">--black-ground-darker</div>
+                <div class="hex-code">#3a3938</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--black-ground-darkest);"></div>
+            <div class="color-text">
+                <div class="var-name">--black-ground-darkest</div>
+                <div class="hex-code">#1f1e1d</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--porsche-gray);"></div>
+            <div class="color-text">
+                <div class="var-name">--porsche-gray</div>
+                <div class="hex-code">#7d7d7d</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--porsche-gray-light);"></div>
+            <div class="color-text">
+                <div class="var-name">--porsche-gray-light</div>
+                <div class="hex-code">#b3b3b3</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--porsche-gray-dark);"></div>
+            <div class="color-text">
+                <div class="var-name">--porsche-gray-dark</div>
+                <div class="hex-code">#4d4d4d</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--porsche-golden);"></div>
+            <div class="color-text">
+                <div class="var-name">--porsche-golden</div>
+                <div class="hex-code">#d6933a</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--porsche-pure-white); border:1px solid #ddd;"></div>
+            <div class="color-text">
+                <div class="var-name">--porsche-pure-white</div>
+                <div class="hex-code">#FFFFFF</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--porsche-graphite-grey);"></div>
+            <div class="color-text">
+                <div class="var-name">--porsche-graphite-grey</div>
+                <div class="hex-code">#323639</div>
+            </div>
+        </div>
+        <div class="color-card">
+            <div class="color-block" style="background: var(--porsche-diamond-silver);"></div>
+            <div class="color-text">
+                <div class="var-name">--porsche-diamond-silver</div>
+                <div class="hex-code">#BFBFBF</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
