@@ -1,0 +1,27 @@
+{
+  "name": "--porsche-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llllYyYllll/--Porsche-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/llllYyYllll/--Porsche-/issues"
+  },
+  "homepage": "https://github.com/llllYyYllll/--Porsche-#readme",
+  "dependencies": {
+    "three": "^0.186.1",
+    "vite": "^8.3.3"
+  }
+}
