@@ -15,3 +15,166 @@
     --porsche-graphite-grey: #323639;
     --porsche-diamond-silver: #BFBFBF;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--porsche-black);
+}
+
+h1 {
+    color: white;
+}
+
+/* ------------------导航栏开始------------------ */
+.header {
+    background-color: var(--porsche-golden);
+}
+
+.header-nav {
+    /* border: 5px solid green; */
+    position: relative;
+    height: 80px;
+}
+
+.header-nav ul {
+    /* border: 5px solid red; */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.header-nav ul li{
+    flex: 1;
+}
+
+.header-nav ul li:first-of-type{
+    /* border: 5px solid yellow; */
+    font-size: 30px;
+    flex: 5;
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    color: var(--porsche-pure-white);
+    font-size: 20px;
+}
+
+.header-nav ul li:last-of-type{
+    margin-left: 40px;
+}
+
+/* ------------------导航栏结束------------------ */
+
+
+/* ------------------首页内容开始------------------ */
+.home {
+    width: 100%;
+    height: 800px;
+    /* border: 5px solid red; */
+}
+
+.home-fliter {
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid blue; */
+    background: linear-gradient(to bottom, var(--porsche-black), var(--black-ground-dark), var(--porsche-black));
+}
+
+/* ------------------首页内容结束------------------ */
+
+
+/* ------------------概览内容开始------------------ */
+.overview {
+    width: 100%;
+    height: 1000px;
+    /* border: 5px solid red; */
+}
+
+.overview-content {
+    padding-top: 420px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.overview-content h1 {
+    font-size: 25px;
+}
+
+.overview-content h1:last-of-type {
+    text-align: right;
+}
+/* ------------------概览内容结束------------------ */
+
+
+/* ------------------历史内容开始------------------ */
+.history {
+    width: 100%;
+    height: 1000px;
+    /* border: 5px solid red; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.history-title {
+    /* border: 5px solid green; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.history-content {
+    /* border: 5px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.history-content div {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.history-content div img {
+    width: 100%;
+}
+
+.history-content div:nth-of-type(1) {
+    order: 1;
+}
+.history-content div:nth-of-type(2) {
+    order: 2;
+}
+.history-content div:nth-of-type(3) {
+    order: 4;
+}
+.history-content div:nth-of-type(4) {
+    order: 3;
+}
+.history-content div:nth-of-type(5) {
+    order: 5;
+}
+.history-content div:nth-of-type(6) {
+    order: 6;
+}
+/* ------------------历史内容结束------------------ */
+
+
+/* ------------------车型介绍内容开始------------------ */
+.car_introduction {
+    width: 100%;
+    height: 1000px;
+    border: 5px solid red;
+}
+/* ------------------车型介绍内容结束------------------ */
+
