@@ -2,18 +2,19 @@
     --porsche-red: #9E0B21;
     --porsche-black: #000000;
     --porsche-yellow: #D4AF37;
-    --black-ground: #a3a19f;
+    --porsche-blue: #3786b3;
+    --black-ground: #a1a39f;
     --black-ground-light: #e0dfdd;
     --black-ground-dark: #5c5b59;
     --black-ground-darker: #3a3938;
-    --black-ground-darkest: #1f1e1d;
-    --porsche-gray: #7d7d7d;
+    --black-ground-darkest: #684625;
+    --porsche-gray: #1c5f51;
     --porsche-gray-light: #b3b3b3;
-    --porsche-gray-dark: #4d4d4d;
+    --porsche-gray-dark: #42030363;
     --porsche-golden: #d6933a;
     --porsche-pure-white: #FFFFFF;
-    --porsche-graphite-grey: #323639;
-    --porsche-diamond-silver: #BFBFBF;
+    --porsche-graphite-grey: #341a49;
+    --porsche-diamond-silver: #650404;
 }
 
 * {
@@ -177,4 +178,3 @@ h1 {
     border: 5px solid red;
 }
 /* ------------------车型介绍内容结束------------------ */
-

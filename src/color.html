@@ -1,162 +1,182 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>保时捷色卡</title>
-    <!-- 引入你的外部css文件 -->
+    <title>Porsche色卡</title>
     <link rel="stylesheet" href="style/style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
         }
-        body {
-            padding: 40px;
-            background-color: #f4f4f4;
-            font-family: sans-serif;
+
+        p {
+            text-align: right;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
         }
-        .color-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 24px;
+
+        .color_1 {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0px;
+            /* border: 1px solid #ff0b0b; */
         }
-        .color-card {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-            transition: transform 0.2s ease;
+
+        li {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            margin-top: 25px;
+            border-radius: 25px;
+            top: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            color: transparent;
+            transition: color 0.25s;
+            font-size: 36px;
+
+
         }
-        .color-card:hover {
-            transform: translateY(-6px);
+
+        
+
+        li:hover {
+            color: #fff;
+            /* 悬停时显示白字 */
+
         }
-        .color-block {
-            height: 120px;
+
+        .color_1 li:nth-of-type(6):hover,
+        .color_1 li:nth-of-type(11):hover ,
+        .color_1 li:nth-of-type(14):hover{
+            color: #000;
         }
-        .color-text {
-            padding:12px;
-            background: white;
+
+        .color_1 li:nth-of-type(1) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-red);
         }
-        .var-name {
-            font-weight:bold;
-            font-size:14px;
+
+        .color_1 li:nth-of-type(2) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-black);
         }
-        .hex-code {
-            font-size:13px;
-            color:#666;
-            margin-top:4px;
+
+        .color_1 li:nth-of-type(3) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-yellow);
+        }
+
+        .color_1 li:nth-of-type(4) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-blue);
+        }
+
+        .color_1 li:nth-of-type(5) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--black-ground);
+        }
+
+        .color_1 li:nth-of-type(6) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--black-ground-light);
+        }
+
+        .color_1 li:nth-of-type(7) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--black-ground-dark);
+        }
+
+        .color_1 li:nth-of-type(8) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--black-ground-darker);
+        }
+
+        .color_1 li:nth-of-type(9) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--black-ground-darkest);
+        }
+
+        .color_1 li:nth-of-type(10) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-gray);
+        }
+
+        .color_1 li:nth-of-type(11) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-gray-light);
+        }
+
+        .color_1 li:nth-of-type(12) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-gray-dark);
+        }
+
+        .color_1 li:nth-of-type(13) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-golden);
+        }
+
+        .color_1 li:nth-of-type(14) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-pure-white);
+        }
+
+        .color_1 li:nth-of-type(15) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-graphite-grey);
+        }
+
+        .color_1 li:nth-of-type(16) {
+            /* border: 3px solid #8e32ff; */
+            background-color: var(--porsche-diamond-silver);
+        }
+
+        /* 只新增这一条：第6个色块悬停时字体强制黑色 */
+        .color_1 li:nth-of-type(6):hover {
+            color: #000 !important;
         }
     </style>
 </head>
+
 <body>
-    <h2 style="margin-bottom:30px">保时捷配色色卡</h2>
-    <div class="color-container">
-        <div class="color-card">
-            <div class="color-block" style="background: var(--porsche-red);"></div>
-            <div class="color-text">
-                <div class="var-name">--porsche-red</div>
-                <div class="hex-code">#9E0B21</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--porsche-black);"></div>
-            <div class="color-text">
-                <div class="var-name">--porsche-black</div>
-                <div class="hex-code">#000000</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--porsche-yellow);"></div>
-            <div class="color-text">
-                <div class="var-name">--porsche-yellow</div>
-                <div class="hex-code">#D4AF37</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--black-ground);"></div>
-            <div class="color-text">
-                <div class="var-name">--black-ground</div>
-                <div class="hex-code">#a3a19f</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--black-ground-light);"></div>
-            <div class="color-text">
-                <div class="var-name">--black-ground-light</div>
-                <div class="hex-code">#e0dfdd</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--black-ground-dark);"></div>
-            <div class="color-text">
-                <div class="var-name">--black-ground-dark</div>
-                <div class="hex-code">#5c5b59</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--black-ground-darker);"></div>
-            <div class="color-text">
-                <div class="var-name">--black-ground-darker</div>
-                <div class="hex-code">#3a3938</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--black-ground-darkest);"></div>
-            <div class="color-text">
-                <div class="var-name">--black-ground-darkest</div>
-                <div class="hex-code">#1f1e1d</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--porsche-gray);"></div>
-            <div class="color-text">
-                <div class="var-name">--porsche-gray</div>
-                <div class="hex-code">#7d7d7d</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--porsche-gray-light);"></div>
-            <div class="color-text">
-                <div class="var-name">--porsche-gray-light</div>
-                <div class="hex-code">#b3b3b3</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--porsche-gray-dark);"></div>
-            <div class="color-text">
-                <div class="var-name">--porsche-gray-dark</div>
-                <div class="hex-code">#4d4d4d</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--porsche-golden);"></div>
-            <div class="color-text">
-                <div class="var-name">--porsche-golden</div>
-                <div class="hex-code">#d6933a</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--porsche-pure-white); border:1px solid #ddd;"></div>
-            <div class="color-text">
-                <div class="var-name">--porsche-pure-white</div>
-                <div class="hex-code">#FFFFFF</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--porsche-graphite-grey);"></div>
-            <div class="color-text">
-                <div class="var-name">--porsche-graphite-grey</div>
-                <div class="hex-code">#323639</div>
-            </div>
-        </div>
-        <div class="color-card">
-            <div class="color-block" style="background: var(--porsche-diamond-silver);"></div>
-            <div class="color-text">
-                <div class="var-name">--porsche-diamond-silver</div>
-                <div class="hex-code">#BFBFBF</div>
-            </div>
-        </div>
+    <h1>Porsche色卡</h1>
+    <p>————————这里是Porsche的色卡展示页面。</p>
+    <!-- 划分每个颜色色块以及描述  -->
+
+    <!--  每个色块有间距 -->
+    <!-- 鼠标放色卡上显示颜色名字 -->
+    <div>
+
+        <ul class="color_1">
+            <li>porsche-red</li>
+            <li>porsche-black</li>
+            <li>porsche-yellow</li>
+            <li>porsche-blue</li>
+            <li>black-ground</li>
+            <li>black-ground-light</li>
+            <li>black-ground-dark</li>
+            <li>black-ground-darker</li>
+            <li>black-ground-darkest</li>
+            <li>porsche-gray</li>
+            <li>porsche-gray-light</li>
+            <li>porsche-gray-dark</li>
+            <li>porsche-golden</li>
+            <li>porsche-pure-white</li>
+            <li>porsche-graphite-grey</li>
+            <li>porsche-diamond-silver</li>
+        </ul>
     </div>
 </body>
+
 </html>
